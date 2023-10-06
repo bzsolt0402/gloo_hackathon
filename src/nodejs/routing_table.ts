@@ -225,7 +225,7 @@ export const ROUTING_TABLE: {
     taskToRun: hackathon.setIfLightPrayerRequestIsAnswered,
   }),
   // payload: { prayerRequest: string }
-  hackathon_addChurchPrayerRequest: new RouteSettings({
+  hackathon_addOrgPrayerRequest: new RouteSettings({
     createPerson: true,
     isPersonRequired: true,
     createRole: true,
@@ -233,7 +233,7 @@ export const ROUTING_TABLE: {
     taskToRun: hackathon.addChurchPrayerRequest,
   }),
   // payload: {}
-  hackathon_getChurchPrayerRequests: new RouteSettings({
+  hackathon_getOrgPrayerRequests: new RouteSettings({
     createPerson: true,
     isPersonRequired: true,
     createRole: true,
@@ -241,7 +241,7 @@ export const ROUTING_TABLE: {
     taskToRun: hackathon.getChurchPrayerRequests,
   }),
   // payload: { id: number }
-  hackathon_deleteChurchPrayerRequest: new RouteSettings({
+  hackathon_deleteOrgPrayerRequest: new RouteSettings({
     createPerson: true,
     isPersonRequired: true,
     createRole: true,
@@ -249,7 +249,7 @@ export const ROUTING_TABLE: {
     taskToRun: hackathon.deleteChurchPrayerRequest,
   }),
   // payload: { id: number, newPrayerRequest: string }
-  hackathon_editChurchPrayerRequest: new RouteSettings({
+  hackathon_editOrgPrayerRequest: new RouteSettings({
     createPerson: true,
     isPersonRequired: true,
     createRole: true,
@@ -257,7 +257,7 @@ export const ROUTING_TABLE: {
     taskToRun: hackathon.editChurchPrayerRequest,
   }),
   // payload: { id: number, answeredState: boolean }
-  hackathon_setIfChurchPrayerRequestIsAnswered: new RouteSettings({
+  hackathon_setIfOrgPrayerRequestIsAnswered: new RouteSettings({
     createPerson: true,
     isPersonRequired: true,
     createRole: true,
