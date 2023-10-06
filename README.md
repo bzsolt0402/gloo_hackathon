@@ -20,3 +20,5 @@ To achieve these goals we did the following.
 
 
 https://www.youtube.com/watch?v=tdY7SjoxwGY
+
+This code requires  the complete Bless Every Home source code to run. If you need to see a working demonstration, please contact the developers at the Best Company of the World.
