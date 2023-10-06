@@ -17,3 +17,6 @@ To achieve these goals we did the following.
 * With Chat GPT we identify the three most prevalent and current themes among church members, and offer for the churches, three distinct, fully developed sermon notes, that actually target the real and current concerns of their members.
 * We send all anonymized prayer journal notes, individual prayer requests and current church concerns, with coordinates and organization identifiers to Gloo’s data exchange to facilitate possible further, very powerful usage of this data.
 * All of this was implemented in both our mobile app and on the website, and is fully functional.
+
+
+https://www.youtube.com/watch?v=tdY7SjoxwGY
