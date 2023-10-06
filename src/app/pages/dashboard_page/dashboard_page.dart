@@ -26,8 +26,6 @@
 /// with said Hackathon.
 ///
 /// This file includes code for the dashboard page.
-/// The three dots (...) in the code indicates that some code has been removed, that
-/// existed before the Hackathon, to demonstrate where the code for Hackathon has been embedded.
 ///
 
 import 'package:flutter/material.dart';
@@ -41,19 +39,27 @@ class DashboardPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(...),
+      appBar: AppBar(
+
+        // ... Removed codes that existed before and are not required for the Hackathon.
+
+      ),
       body: RefreshIndicator(
-        ...,
+        // ... Removed codes that existed before and are not required for the Hackathon.,
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              ...,
+
+              // ... Removed codes that existed before and are not required for the Hackathon.
+              
               const Padding(
                 padding: EdgeInsets.only(top: 4.0),
                 child: YouVersionPlanWidget(),
               ),
-              ...,
+
+              // ... Removed codes that existed before and are not required for the Hackathon.
+
             ],
           ),
         ),

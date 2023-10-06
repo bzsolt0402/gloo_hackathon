@@ -120,7 +120,7 @@ CREATE TABLE ai_crons (
 
 
 -- YouVersion Bible plans are stored here. The vector embeddings for each
--- play are also stored here.
+-- plan are also stored here.
 CREATE TABLE `light_plans` (
   `id` mediumint unsigned NOT NULL,
   `url` varchar(255),

@@ -27,8 +27,6 @@
 ///
 /// This file includes code for the household interaction page where the prayer journal is
 /// being displayed.
-/// The three dots (...) in the code indicates that some code has been removed, that
-/// existed before the Hackathon, to demonstrate where the code for Hackathon has been embedded.
 ///
 
 import 'package:flutter/material.dart';
@@ -46,7 +44,7 @@ class HouseholdInteractionPage extends StatelessWidget {
 
   static const route = "/household_interaction";
 
-  ...
+  // ... Removed codes that existed before and are not required for the Hackathon.
 
   @override
   Widget build(BuildContext context) {
@@ -54,11 +52,16 @@ class HouseholdInteractionPage extends StatelessWidget {
     return GestureDetector(
       onTap: FocusScope.of(context).unfocus,
       child: Scaffold(
-        appBar: AppBar(...),
+        appBar: AppBar(
+
+          // ... Removed codes that existed before and are not required for the Hackathon.
+
+        ),
         body: CustomScrollView(
           slivers: [
-            ...,
-            ...,
+            
+            // ... Removed codes that existed before and are not required for the Hackathon.
+
             MultiProvider(
               providers: [
                 ChangeNotifierProvider(
@@ -75,9 +78,13 @@ class HouseholdInteractionPage extends StatelessWidget {
                 builder: (context, prayerJournalProvider, child) {
                   switch (prayerJournalProvider.status) {
                     case DataState.loading:
-                      ...
+                      
+                      // ... Removed codes that existed before and are not required for the Hackathon.
+
                     case DataState.error:
-                      ...
+                      
+                      // ... Removed codes that existed before and are not required for the Hackathon.
+
                     case DataState.success:
                       return const MultiSliver(
                         children: [

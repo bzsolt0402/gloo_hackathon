@@ -27,8 +27,6 @@
 ///
 /// This file includes code the router of the app. It is used to navigate in the app between
 /// routes and provides controllers for the different routes.
-/// The three dots (...) in the code indicates that some code has been removed, that
-/// existed before the Hackathon, to demonstrate where the code for Hackathon has been embedded.
 ///
 
 import 'package:flutter/cupertino.dart';
@@ -51,10 +49,14 @@ final _rootNavigatorKey = GlobalKey<NavigatorState>();
 final appRouter = GoRouter(
   navigatorKey: _rootNavigatorKey,
   routes: [
-    ...,
+
+    // ... Removed codes that existed before and are not required for the Hackathon.
+
     ShellRoute(
       routes: [
-        ...,
+             
+        // ... Removed codes that existed before and are not required for the Hackathon.
+
         StatefulShellRoute.indexedStack(
           builder: (context, state, navigationShell) =>
               HomePage(
@@ -75,7 +77,9 @@ final appRouter = GoRouter(
                 builder: (context, state) => const DailyPrayerPage(),
               ),
             ]),
-            ...,
+            
+            // ... Removed codes that existed before and are not required for the Hackathon.
+            
           ],
         ),
       ],
@@ -88,7 +92,9 @@ final appRouter = GoRouter(
             child: child,
           ),
     ),
-    ...,
+        
+    // ... Removed codes that existed before and are not required for the Hackathon.
+
     GoRoute(
       parentNavigatorKey: _rootNavigatorKey,
       path: HouseholdInteractionPage.route,
@@ -110,7 +116,9 @@ final appRouter = GoRouter(
         );
       },
     ),
-    ...,
+
+    // ... Removed codes that existed before and are not required for the Hackathon.
+
     GoRoute(
       parentNavigatorKey: _rootNavigatorKey,
       path: LightsPrayerRequestsPage.route,
@@ -133,5 +141,7 @@ final appRouter = GoRouter(
       },
     ),
   ],
-  ...,
+    
+  // ... Removed codes that existed before and are not required for the Hackathon.
+
 );

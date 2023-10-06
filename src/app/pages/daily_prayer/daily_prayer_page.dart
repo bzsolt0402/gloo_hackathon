@@ -26,8 +26,6 @@
 /// with said Hackathon.
 ///
 /// This file includes code for the daily prayer page where the prayer prompt is being displayed.
-/// The three dots (...) in the code indicates that some code has been removed, that
-/// existed before the Hackathon, to demonstrate where the code for Hackathon has been embedded.
 ///
 
 import 'package:flutter/material.dart';
@@ -41,9 +39,13 @@ class DailyPrayerPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(...),
+      appBar: AppBar(
+
+        // ... Removed codes that existed before and are not required for the Hackathon.
+
+      ),
       body: StreamBuilder(
-        stream: ...,
+        stream: // ... Removed codes that existed before and are not required for the Hackathon.,
         builder: (context, snapshot) {
           switch (snapshot.connectionState) {
             case ConnectionState.none:
@@ -53,26 +55,38 @@ class DailyPrayerPage extends StatelessWidget {
               );
             default:
               if (snapshot.hasError) {
-                ...
+                
+                // ... Removed codes that existed before and are not required for the Hackathon.
+
               } else {
-                ...
+                                
+                // ... Removed codes that existed before and are not required for the Hackathon.
+
                 return ListenableBuilder(
-                  listenable: ...,
+                  listenable: // ... Removed codes that existed before and are not required for the Hackathon.
                   builder: (context, child) {
-                    ...
+
+                    // ... Removed codes that existed before and are not required for the Hackathon.
+
                     return Stack(
                       children: [
                         SingleChildScrollView(
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              ...
+                                                        
+                              // ... Removed codes that existed before and are not required for the Hackathon.
+
                               const PrayerPrompt(),
-                              ...
+
+                              // ... Removed codes that existed before and are not required for the Hackathon.
+
                             ],
                           ),
                         ),
-                        ...
+                                                
+                        // ... Removed codes that existed before and are not required for the Hackathon.
+
                       ],
                     );
                   },

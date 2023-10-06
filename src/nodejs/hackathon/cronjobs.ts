@@ -44,57 +44,54 @@ import * as functions from "./functions.js"
  * @param job
  */
 export async function initCronJobs(): Promise<void> {
-  setInterval((): void => {
-    generatePersonalPrayerPrompt("light_prayer_prompts");
-    generateSermonNotes("church_sermon_notes");
-    generateDailyYouVersionPlan("youversion_recommendations");
-  }, 1000 * 60 * 60);
+	setInterval((): void => {
+		generatePersonalPrayerPrompt("light_prayer_prompts");
+		generateSermonNotes("church_sermon_notes");
+		generateDailyYouVersionPlan("youversion_recommendations");
+	}, 1000 * 60 * 60);
 }
 
 /**
  *  
  * It is the cronjob for generating prayer prompts.
- * @param job
  * @returns
  */
 async function generatePersonalPrayerPrompt(
-  job: string
+	job: string
 ): Promise<void> {
-  const didTheCronRunToday = await didCronJobAlreadyRunToday(job);
-  if (!didTheCronRunToday) {
-    await functions.generatePersonalPrayerPromptForActiveLights();
-  }
-  saveCronJobDone(job);
+	const didTheCronRunToday = await didCronJobAlreadyRunToday(job);
+	if (!didTheCronRunToday) {
+		await functions.generatePersonalPrayerPromptForActiveLights();
+	}
+	saveCronJobDone(job);
 }
 
 /**
  *  
  * It is the cronjob for generating sermon notes.
- * @param job
  * @returns
  */
 async function generateSermonNotes(
-  job: string
+	job: string
 ): Promise<void> {
-  const didTheCronRunToday = await didCronJobAlreadyRunToday(job);
-  if (!didTheCronRunToday) {
-    await functions.generateDailySermonNoteForActiveChurches();
-  }
-  saveCronJobDone(job);
+	const didTheCronRunToday = await didCronJobAlreadyRunToday(job);
+	if (!didTheCronRunToday) {
+		await functions.generateDailySermonNoteForActiveChurches();
+	}
+	saveCronJobDone(job);
 }
 
 /**
  *  
  * It is the cronjob for generating youversion recommendations.
- * @param job
  * @returns
  */
 async function generateDailyYouVersionPlan(
-  job: string
+	job: string
 ): Promise<void> {
-  const didTheCronRunToday = await didCronJobAlreadyRunToday(job);
-  if (!didTheCronRunToday) {
-    await functions.generateDailyYouVersionPlanForAllActiveLights();
-  }
-  saveCronJobDone(job);
+	const didTheCronRunToday = await didCronJobAlreadyRunToday(job);
+	if (!didTheCronRunToday) {
+		await functions.generateDailyYouVersionPlanForAllActiveLights();
+	}
+	saveCronJobDone(job);
 }

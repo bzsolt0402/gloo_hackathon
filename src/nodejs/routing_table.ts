@@ -26,8 +26,6 @@
  * with said Hackathon.
  * 
  * This file includes code for API tasks and their configurations.
- * The three dots (...) indicates that some code has been removed due to it's not for Hackathon and
- * existed before.
  */
 
 'use strict'
@@ -127,7 +125,9 @@ class RouteSettings {
 export const ROUTING_TABLE: {
   [task: string]: RouteSettings
 } = {
-  ...,
+
+  // ... Removed codes that existed before and are not required for the Hackathon.
+
   // payload: {}
   hackathon_getSermonSummary: new RouteSettings({
     createPerson: true,
