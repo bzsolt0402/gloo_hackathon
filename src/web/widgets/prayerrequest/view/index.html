@@ -1,0 +1,115 @@
+<!--
+ * Code written for:
+ *
+ * 
+ *                              ████
+ *                              ████
+ *                              ████
+ *                              ████
+ *                              ████
+ *             ███████  ████    ████         ████████              ████████
+ *           ███████████████    ████      ██████████████        ██████████████
+ *         ████        █████    ████     ████        ████      ████        ████
+ *        ████          ████    ████    ████          ████    ████          ████
+ *         ████        █████    ████     ████        ████      ████        ████
+ *          ████████████████    ████      ██████████████        ██████████████
+ *             ███████  ████    ████         ████████              ████████
+ *                      ████ 
+ *                    █████ 
+ *                 ██████    
+ * 
+ *                                                     AI & the Church Hackathon
+ * 
+ * 
+ * @license The judging committee of the 2023 AI & the Church Hackathon, organized by Gloo LLC,
+ * has the permission to use, review, assess, test, and otherwise analyze this file in connection 
+ * with said Hackathon.
+ * 
+ * This file contains the HTML code of the Prayer request widget.
+ * -->
+
+<section class="prayerRequestWidget">
+    <div class="prayerRequestDiv addPrayerRequestContainer longread">
+        <form class="prayerRequestForm">
+            <textarea class="prayerRequestFormTextarea"
+                autofocus 
+                placeholder="Type your prayer request here..."
+                minlength="2"
+                maxlength="8096"
+                required
+            ></textarea>
+            <div class="filledButton">Add new</div>
+        </form>
+    </div>
+    <div class="prayerRequestDiv prayerRequestContainer longread">
+        <div class="prayerRequestPlaceholder prayerRequestCard filledCard filledCard-grey noColor">
+            <div class="prayerRequestCardInside">
+                <div class="prayerRequestText">
+                    <div class="whiteTextPlaceholder fullWidth"></div>
+                    <div class="whiteTextPlaceholder fullWidth"></div>
+                    <div class="whiteTextPlaceholder sixtyPercentWidth"></div>
+                </div>
+                <div class="prayerRequestDateAndButtons">
+                    <div class="prayerRequestDate">
+                        <div class="datePlaceHolder"></div>
+                    </div>
+                    <div class="prayerRequestButtons">
+                        <div class="shownButton whiteButtonPlaceHolder"></div>
+                        <div class="shownButton whiteButtonPlaceHolder"></div>
+                        <div class="shownButton whiteButtonPlaceHolder"></div>
+                        <div class="js-setPrayerRequestAsAnswered 
+                             hiddenButton 
+                             textButton 
+                             textButton-iconOnly 
+                             textButton-grey 
+                             textButton-greyAlphaText" 
+                             title="Set as answered">
+                            <span class="js-setPrayerRequestAsAnswered material-icons" 
+                                  translate="no">check_circle</span>
+                        </div>
+                        <div class="js-editPrayerRequest
+                             hiddenButton 
+                             textButton 
+                             textButton-iconOnly 
+                             textButton-grey 
+                             textButton-greyAlphaText" 
+                             title="Edit prayer request">
+                            <span class="js-editPrayerRequest material-icons" 
+                                  translate="no">edit</span>
+                        </div>
+                        <div class="js-setPrayerRequestAsDeleted 
+                             hiddenButton 
+                             textButton 
+                             textButton-iconOnly 
+                             textButton-grey 
+                             textButton-greyAlphaText" 
+                             title="Delete prayer request">
+                            <span class="js-setPrayerRequestAsDeleted material-icons" 
+                                  translate="no">delete_forever</span>
+                        </div>
+                        <div class="js-savePrayerRequest
+                             editButton 
+                             textButton 
+                             textButton-iconOnly 
+                             textButton-grey 
+                             textButton-greyAlphaText" 
+                             title="Save prayer request">
+                            <span class="js-savePrayerRequest material-icons" 
+                                  translate="no">save</span>
+                        </div>
+                        <div class="js-cancelEditingPrayerRequest
+                             editButton 
+                             textButton 
+                             textButton-iconOnly 
+                             textButton-grey 
+                             textButton-greyAlphaText" 
+                             title="Cancel editing">
+                            <span class="js-cancelEditingPrayerRequest material-icons" 
+                                  translate="no">cancel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,74 @@
+/**
+ * Code written for:
+ *
+ * 
+ *                              ████
+ *                              ████
+ *                              ████
+ *                              ████
+ *                              ████
+ *             ███████  ████    ████         ████████              ████████
+ *           ███████████████    ████      ██████████████        ██████████████
+ *         ████        █████    ████     ████        ████      ████        ████
+ *        ████          ████    ████    ████          ████    ████          ████
+ *         ████        █████    ████     ████        ████      ████        ████
+ *          ████████████████    ████      ██████████████        ██████████████
+ *             ███████  ████    ████         ████████              ████████
+ *                      ████ 
+ *                    █████ 
+ *                 ██████    
+ * 
+ *                                                     AI & the Church Hackathon
+ * 
+ * 
+ * @license The judging committee of the 2023 AI & the Church Hackathon, organized by Gloo LLC,
+ * has the permission to use, review, assess, test, and otherwise analyze this file in connection 
+ * with said Hackathon.
+ * 
+ * This file contains all the Sermon widget specific CSS used by the Sermon widget.
+ */
+
+.sermonContainer {
+    margin-top: 12px;
+    padding: 24px; 
+    background: white; 
+    border-radius: 20px; 
+    color: rgba(0,0,0,0.87);
+}
+
+.sermonHeader {
+    display: flex; 
+    align-items: center; 
+    gap: 16px; 
+    margin-bottom: 16px;
+}
+
+.sermonHeader .material-icons {
+    font-size: 32px;
+}
+
+.sermonHeaderTextContainer {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 4px;
+}
+
+.sermonWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 24px 0;
+}
+
+.sermonContent {
+    padding: 0;
+    text-align: left;
+    white-space: break-spaces;
+}
+
+@media (max-width: 1279px) {
+    
+}

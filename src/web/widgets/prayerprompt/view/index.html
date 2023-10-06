@@ -1,0 +1,46 @@
+<!--
+ * Code written for:
+ *
+ * 
+ *                              ████
+ *                              ████
+ *                              ████
+ *                              ████
+ *                              ████
+ *             ███████  ████    ████         ████████              ████████
+ *           ███████████████    ████      ██████████████        ██████████████
+ *         ████        █████    ████     ████        ████      ████        ████
+ *        ████          ████    ████    ████          ████    ████          ████
+ *         ████        █████    ████     ████        ████      ████        ████
+ *          ████████████████    ████      ██████████████        ██████████████
+ *             ███████  ████    ████         ████████              ████████
+ *                      ████ 
+ *                    █████ 
+ *                 ██████    
+ * 
+ *                                                     AI & the Church Hackathon
+ * 
+ * 
+ * @license The judging committee of the 2023 AI & the Church Hackathon, organized by Gloo LLC,
+ * has the permission to use, review, assess, test, and otherwise analyze this file in connection 
+ * with said Hackathon.
+ * 
+ * This file contains the HTML code of the Prayer prompt widget.
+ * -->
+
+<div class="prayerPromptContainer">
+    <h6>Daily prayer</h6>
+    <div class="prayerPromptText fc_collapsible collapsed" 
+         data-collapse-button="{prayerpromptExpandButtonId}" 
+         data-collapse-dimension="height" 
+         data-collapse-value-correction="0" 
+         data-collapsed-height-in-pixels="75"></div>
+    <div id="{prayerpromptExpandButtonId}" class="expandPrayerPrompt collapsed">
+        <div class="showWhenCollapsed">
+            <span translate="no" class="material-icons">expand_more</span>expand
+        </div>
+        <div class="showWhenOpen">
+            <span translate="no" class="material-icons">expand_less</span>collapse
+        </div>
+    </div>
+</div>

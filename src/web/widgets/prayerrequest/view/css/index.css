@@ -1,0 +1,163 @@
+/**
+ * Code written for:
+ *
+ * 
+ *                              ████
+ *                              ████
+ *                              ████
+ *                              ████
+ *                              ████
+ *             ███████  ████    ████         ████████              ████████
+ *           ███████████████    ████      ██████████████        ██████████████
+ *         ████        █████    ████     ████        ████      ████        ████
+ *        ████          ████    ████    ████          ████    ████          ████
+ *         ████        █████    ████     ████        ████      ████        ████
+ *          ████████████████    ████      ██████████████        ██████████████
+ *             ███████  ████    ████         ████████              ████████
+ *                      ████ 
+ *                    █████ 
+ *                 ██████    
+ * 
+ *                                                     AI & the Church Hackathon
+ * 
+ * 
+ * @license The judging committee of the 2023 AI & the Church Hackathon, organized by Gloo LLC,
+ * has the permission to use, review, assess, test, and otherwise analyze this file in connection 
+ * with said Hackathon.
+ * 
+ * This file contains all the Prayer request widget specific CSS used by the Prayer request widget.
+ */
+
+
+.prayerRequestWidget .prayerRequestDiv {
+    margin: 24px auto;
+    padding: 0 24px; 
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.prayerRequestWidget .prayerRequestContainer.longread {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    transition: height 0.2s linear;
+    min-height: 192px;
+    box-sizing: border-box;
+}
+
+.prayerRequestWidget .addPrayerRequestContainer.longread {   
+    width: 100%;    
+    box-sizing: border-box;
+}
+
+.prayerRequestWidget .addPrayerRequestContainer .prayerRequestForm {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 24px;
+}
+
+.prayerRequestWidget .prayerRequestFormTextarea {
+    outline: none; 
+    border: 1px dashed #ccc; 
+    resize: none; 
+    border-radius: 24px; 
+    width: 100%; 
+    box-sizing: border-box;
+    background-color: #fafafa;
+    margin: 0;
+}
+
+.prayerRequestWidget .prayerRequestFormTextarea .ninetyMinHeight {
+    min-height: 90px;
+}
+
+.prayerRequestWidget .addPrayerRequestContainer .filledButton {
+    align-self: flex-end;
+}
+
+.prayerRequestWidget .prayerRequestPlaceholder {
+    width: 100%;
+    overflow: visible;
+    box-sizing: border-box;
+    /*flex: 1;*/
+}
+
+.prayerRequestWidget .prayerRequestCardInside {
+    margin: 24px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.prayerRequestWidget .noMargin {
+    margin: 0;
+}
+
+.prayerRequestWidget .prayerRequestText {
+    line-height: 1.6rem; 
+    text-align: left;
+}
+
+.prayerRequestWidget .prayerRequestText.breakSpaces {
+    white-space: break-spaces;
+}
+
+.prayerRequestWidget .datePlaceHolder {
+    background: white; 
+    height: 16px; 
+    width: 120px;
+}
+
+.prayerRequestWidget .whiteTextPlaceholder {
+    margin-bottom: 16px; 
+    background: white; 
+    height: 16px;     
+}
+
+.prayerRequestWidget .whiteTextPlaceholder.fullWidth {
+    width: 100%;
+}
+
+.prayerRequestWidget .whiteTextPlaceholder.sixtyPercentWidth {
+    width: 60%;
+}
+
+.prayerRequestWidget .prayerRequestDateAndButtons {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.prayerRequestWidget .prayerRequestButtons {
+    color: rgba(0,0,0,0.54); 
+    display: flex; 
+    align-items: center;
+}
+
+.prayerRequestWidget .prayerRequestButtons .textButton {
+    line-height: 0;
+}
+
+.prayerRequestWidget .whiteButtonPlaceHolder {
+    background: white; 
+    height: 48px; 
+    width: 48px; 
+    margin: 0 4px;
+}
+
+.prayerRequestWidget .hiddenClone {
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.prayerRequestWidget .showClone {
+    opacity: 1;      
+}
+
+.prayerRequestWidget .hiddenButton, .editButton {
+    display: none;
+}

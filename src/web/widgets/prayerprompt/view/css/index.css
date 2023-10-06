@@ -1,0 +1,71 @@
+/**
+ * Code written for:
+ *
+ * 
+ *                              ████
+ *                              ████
+ *                              ████
+ *                              ████
+ *                              ████
+ *             ███████  ████    ████         ████████              ████████
+ *           ███████████████    ████      ██████████████        ██████████████
+ *         ████        █████    ████     ████        ████      ████        ████
+ *        ████          ████    ████    ████          ████    ████          ████
+ *         ████        █████    ████     ████        ████      ████        ████
+ *          ████████████████    ████      ██████████████        ██████████████
+ *             ███████  ████    ████         ████████              ████████
+ *                      ████ 
+ *                    █████ 
+ *                 ██████    
+ * 
+ *                                                     AI & the Church Hackathon
+ * 
+ * 
+ * @license The judging committee of the 2023 AI & the Church Hackathon, organized by Gloo LLC,
+ * has the permission to use, review, assess, test, and otherwise analyze this file in connection 
+ * with said Hackathon.
+ * 
+ * This file contains all the Prayer prompt widget specific CSS used by the Prayer prompt widget.
+ */
+
+
+.prayerPromptContainer {
+    transition: height 0.4s linear;
+    padding: 24px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.prayerPromptText {
+    height: 75px;
+    overflow: hidden;
+    line-height: 1.5;
+    transition: all 0.4s ease-in-out;
+    white-space: break-spaces;
+}
+
+
+.showWhenCollapsed, .showWhenOpen {
+    display: none;
+    align-items: center; 
+    justify-content: center; 
+    gap: 8px;
+    cursor: pointer;
+}
+
+.expandPrayerPrompt.collapsed {
+    .showWhenCollapsed {
+        display: flex;
+    }
+}
+
+.expandPrayerPrompt:not(.collapsed) {
+    .showWhenOpen {
+        display: flex;
+    }
+}
+
+@media (max-width: 1279px) {
+    
+}
