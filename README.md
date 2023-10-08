@@ -1,5 +1,10 @@
 # Best Company of the World - Gloo Hackathon
 
+Test web: https://test.blesseveryhome.com <br>
+Test APK: https://drive.google.com/file/d/1wS8n4JLktITJAgYXprzF7MgF0i91ugm3/view <br>
+Video: https://drive.google.com/file/d/1tYjKc580rC2GKy6gOZasv2bI4fhm1bob/view <br>
+Documentation: https://docs.google.com/document/d/1dNTPBFSj2TNH_xgjoAiU1kexrSEeqHhh3GQswrKDTUo/ <br>
+
 At Bless Every Home we have close to 27,000 users actively praying for their neighbors by name every day, and about 1,000 churches actively managing the progress of these users. We also have nearly 70,000 prayer journal entries.
 
 Our Hackathon solution aims to drive engagement and achieve 4 specific goals.
