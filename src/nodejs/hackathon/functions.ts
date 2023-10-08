@@ -362,13 +362,12 @@ export async function openAILightPlanConnector(
 	lightId: number,
 	logFileName: string = "",
 ): Promise<void> {
+	// Initialize the prompt string
+	let prompt = '';
 	try {
 		// Fetch journal notes and prayer requests for the Light
 		const journalNotes = await dao.getOnlyPrayerJournalNotes(lightId);
 		const lightPrayerRequests = await dao.getLightPrayerRequestsGrouped(lightId);
-
-		// Initialize the prompt string
-		let prompt = '';
 
 		// Check if there are answered prayer requests or journal notes
 		if (journalNotes?.answered_notes !== null ||
